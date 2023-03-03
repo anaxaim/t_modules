@@ -7,6 +7,7 @@ terraform {
 }
 
 provider edgecenter {
-    edgecenter_platform_api = "https://api.edgecenter.ru/iam"
-    edgecenter_cloud_api = "https://api.edgecenter.ru/cloud"
+    edgecenter_platform_api = var.edgecenter_platform_api
+    edgecenter_cloud_api = var.edgecenter_cloud_api
+    permanent_api_token = var.permanent_api_token
 }
